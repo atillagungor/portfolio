@@ -28,5 +28,29 @@
     "line1": "Let's work",
     "line2": "together.",
     "subtitle": "Have an idea, a project or just want to say hi? My inbox is always open."
+  },
+  "Projects": {
+    "label": "02 — Projects",
+    "heading": "Selected work.",
+    "subtitle": "A few things I've built. More on the way.",
+    "view": "View project",
+    "items": {
+      "portfolio": {
+        "title": "Portfolio Website",
+        "description": "The site you're looking at: bilingual, animated and built with Next.js."
+      },
+      "game": {
+        "title": "Unity Game Prototype",
+        "description": "A small gameplay prototype focused on tight controls and clean C# architecture."
+      },
+      "api": {
+        "title": "Task Manager API",
+        "description": "A REST API with a SQL database, authentication and clean layered structure."
+      },
+      "pipeline": {
+        "title": "CI/CD Pipeline",
+        "description": "Automated build, test and deploy workflow with containerized services."
+      }
+    }
   }
 }

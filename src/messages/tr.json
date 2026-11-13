@@ -28,5 +28,29 @@
     "line1": "Birlikte",
     "line2": "çalışalım.",
     "subtitle": "Bir fikrin, projen ya da sadece merhaban mı var? Kapım her zaman açık."
+  },
+  "Projects": {
+    "label": "02 — Projeler",
+    "heading": "Seçili işler.",
+    "subtitle": "Geliştirdiğim birkaç şey. Yenileri yolda.",
+    "view": "Projeyi gör",
+    "items": {
+      "portfolio": {
+        "title": "Portfolyo Sitesi",
+        "description": "Şu an baktığın site: iki dilli, animasyonlu ve Next.js ile geliştirildi."
+      },
+      "game": {
+        "title": "Unity Oyun Prototipi",
+        "description": "Akıcı kontroller ve temiz C# mimarisine odaklanan küçük bir oynanış prototipi."
+      },
+      "api": {
+        "title": "Görev Yöneticisi API",
+        "description": "SQL veritabanı, kimlik doğrulama ve katmanlı yapıya sahip bir REST API."
+      },
+      "pipeline": {
+        "title": "CI/CD Hattı",
+        "description": "Konteynerize servislerle otomatik build, test ve deploy akışı."
+      }
+    }
   }
 }
