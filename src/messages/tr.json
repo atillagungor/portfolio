@@ -1,1 +1,11 @@
-{ "Hero": { "title": "Merhaba, ben Atilla", "subtitle": "Yazılım geliştirici" } }
+{
+  "Nav": { "about": "Hakkımda", "projects": "Projeler", "contact": "İletişim" },
+  "Hero": {
+    "eyebrow": "Yazılım Geliştirici",
+    "title": "Merhaba, ben Atilla.",
+    "subtitle": "Temiz, hızlı ve özenle tasarlanmış web deneyimleri geliştiriyorum.",
+    "cta": "Çalışmalarım",
+    "contact": "İletişime geç",
+    "scroll": "Kaydır"
+  }
+}

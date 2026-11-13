@@ -1,1 +1,11 @@
-{ "Hero": { "title": "Hi, I'm Atilla", "subtitle": "Software developer" } }
+{
+  "Nav": { "about": "About", "projects": "Projects", "contact": "Contact" },
+  "Hero": {
+    "eyebrow": "Software Developer",
+    "title": "Hi, I'm Atilla.",
+    "subtitle": "I build clean, fast and thoughtful web experiences.",
+    "cta": "See my work",
+    "contact": "Get in touch",
+    "scroll": "Scroll"
+  }
+}

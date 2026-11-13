@@ -1,14 +1,17 @@
-import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { useTranslations } from "next-intl";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
+import Background from "@/components/Background";
 
 export default function Home() {
-  const t = useTranslations("Hero");
-
   return (
-    <main className="p-8">
-      <LanguageSwitcher />
-      <h1 className="text-4xl font-bold">{t("title")}</h1>
-      <p>{t("subtitle")}</p>
-    </main>
+    <>
+      <Intro />
+      <Background />
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
