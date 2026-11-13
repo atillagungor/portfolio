@@ -1,5 +1,9 @@
 {
-  "Nav": { "about": "Hakkımda", "projects": "Projeler", "contact": "İletişim" },
+  "Nav": {
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
   "Hero": {
     "eyebrow": "Yazılım Geliştirici",
     "title": "Merhaba, ben Atilla.",
@@ -7,5 +11,22 @@
     "cta": "Çalışmalarım",
     "contact": "İletişime geç",
     "scroll": "Kaydır"
+  },
+  "About": {
+    "label": "01 — Hakkımda",
+    "heading": "Fikirleri temiz, hızlı ve özenli ürünlere dönüştürüyorum.",
+    "body": "Detaylara önem veren bir yazılım geliştiriciyim: okunabilir kod, akıcı etkileşimler ve doğru hissettiren arayüzler. Yeni araçlar öğrenmeyi ve sıfırdan bir şeyler inşa etmeyi seviyorum.",
+    "groups": {
+      "languages": "Diller",
+      "game": "Oyun Geliştirme",
+      "web": "Web",
+      "devops": "DevOps & Araçlar"
+    }
+  },
+  "Contact": {
+    "label": "03 — İletişim",
+    "line1": "Birlikte",
+    "line2": "çalışalım.",
+    "subtitle": "Bir fikrin, projen ya da sadece merhaban mı var? Kapım her zaman açık."
   }
 }

@@ -1,5 +1,9 @@
 {
-  "Nav": { "about": "About", "projects": "Projects", "contact": "Contact" },
+  "Nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
   "Hero": {
     "eyebrow": "Software Developer",
     "title": "Hi, I'm Atilla.",
@@ -7,5 +11,22 @@
     "cta": "See my work",
     "contact": "Get in touch",
     "scroll": "Scroll"
+  },
+  "About": {
+    "label": "01 — About",
+    "heading": "I turn ideas into clean, fast and thoughtful products.",
+    "body": "I'm a software developer who cares about the details: readable code, smooth interactions and interfaces that feel right. I enjoy learning new tools and building things from scratch.",
+    "groups": {
+      "languages": "Languages",
+      "game": "Game Development",
+      "web": "Web",
+      "devops": "DevOps & Tools"
+    }
+  },
+  "Contact": {
+    "label": "03 — Contact",
+    "line1": "Let's work",
+    "line2": "together.",
+    "subtitle": "Have an idea, a project or just want to say hi? My inbox is always open."
   }
 }

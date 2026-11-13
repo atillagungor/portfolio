@@ -26,7 +26,7 @@ export default function LanguageSwitcher() {
             aria-pressed={active}
             onClick={() => router.replace(pathname, { locale: l })}
             className={`relative z-10 rounded-full px-3 py-1 font-mono text-xs font-medium uppercase tracking-wider transition-colors ${
-              active ? "text-background" : "text-muted hover:text-foreground"
+              active ? "text-background" : "ext-white/70 hover:text-white"
             }`}
           >
             {active && (

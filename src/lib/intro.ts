@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export const INTRO_DURATION = 2.5; // seconds until the curtain starts leaving
+export const INTRO_DURATION = 4; // seconds until the curtain starts leaving
 
 // Lives as long as the page load: a refresh replays the intro,
 // a language switch (client-side navigation) does not.
