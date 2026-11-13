@@ -52,5 +52,9 @@
         "description": "Konteynerize servislerle otomatik build, test ve deploy akışı."
       }
     }
+  },
+  "Meta": {
+    "title": "Atilla Güngör — Yazılım Geliştirici",
+    "description": "C#, SQL, Unity, TypeScript ve DevOps ile çalışan yazılım geliştirici Atilla Güngör'ün portfolyosu."
   }
 }

@@ -52,5 +52,9 @@
         "description": "Automated build, test and deploy workflow with containerized services."
       }
     }
+  },
+  "Meta": {
+    "title": "Atilla Güngör — Software Developer",
+    "description": "Portfolio of Atilla Güngör, a software developer working with C#, SQL, Unity, TypeScript and DevOps."
   }
 }
