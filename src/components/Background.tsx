@@ -36,17 +36,18 @@ export default function Background() {
         transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
         className="absolute -bottom-48 -right-32 h-[36rem] w-[36rem] rounded-full bg-cyan-500/15 blur-[140px]"
       />
+      {/* Third blob only on wider screens to keep phones light */}
       <motion.div
         animate={{ x: [0, 60, -60, 0], y: [0, 40, -50, 0] }}
         transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-1/3 top-1/2 h-[28rem] w-[28rem] rounded-full bg-fuchsia-500/10 blur-[130px]"
+        className="absolute left-1/3 top-1/2 hidden h-[28rem] w-[28rem] rounded-full bg-fuchsia-500/10 blur-[130px] sm:block"
       />
 
       {/* Grid, fades out towards the edges */}
       <div className="absolute inset-0 [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:64px_64px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]" />
 
-      {/* Cursor spotlight */}
-      <motion.div className="absolute inset-0" style={{ background: spotlight }} />
+      {/* Cursor spotlight: pointer devices only */}
+      <motion.div className="absolute inset-0 hidden md:block" style={{ background: spotlight }} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import "../globals.css";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { author, siteUrl } from "@/lib/site";
+import Providers from "@/components/Providers"
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -57,7 +58,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Providers>{children}</Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
