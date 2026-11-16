@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
@@ -10,6 +11,7 @@ type Props = {
   tags: readonly string[];
   href: string;
   gradient: string;
+  image?: string;
   viewLabel: string;
 };
 
@@ -20,6 +22,7 @@ export default function ProjectCard({
   tags,
   href,
   gradient,
+  image,
   viewLabel,
 }: Props) {
   const mx = useMotionValue(-300);
@@ -46,15 +49,27 @@ export default function ProjectCard({
       />
 
       <div className="relative">
-        {/* Preview area (replace with a real screenshot later) */}
+        {/* Preview: real screenshot when available, gradient placeholder otherwise */}
         <div
-          className="relative mb-6 flex h-44 items-end overflow-hidden rounded-xl p-4 transition duration-500 group-hover:scale-[1.02]"
+          className="relative mb-6 flex h-44 items-end overflow-hidden rounded-xl border border-white/10 p-4 transition duration-500 group-hover:scale-[1.02]"
           style={{ background: gradient }}
         >
-          <div className="absolute inset-0 bg-black/35" />
-          <span className="relative font-mono text-6xl font-semibold text-white/30">
-            {String(index + 1).padStart(2, "0")}
-          </span>
+          {image ? (
+            <Image
+              src={image}
+              alt={title}
+              fill
+              sizes="(min-width: 1152px) 560px, (min-width: 640px) 45vw, 92vw"
+              className="object-cover object-left-top"
+            />
+          ) : (
+            <>
+              <div className="absolute inset-0 bg-black/35" />
+              <span className="relative font-mono text-6xl font-semibold text-white/30">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            </>
+          )}
         </div>
 
         <div className="flex items-start justify-between gap-4">

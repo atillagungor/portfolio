@@ -28,6 +28,7 @@ export default function Projects() {
           <Reveal key={project.key} delay={(i % 2) * 0.1} className="h-full">
             <ProjectCard
               index={i}
+              image={project.image}
               title={t(`items.${project.key}.title`)}
               description={t(`items.${project.key}.description`)}
               tags={project.tags}

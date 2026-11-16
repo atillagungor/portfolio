@@ -47,9 +47,9 @@
         "title": "Portfolio Website",
         "description": "The site you're looking at: bilingual, animated and built with Next.js."
       },
-      "game": {
-        "title": "Unity Game Prototype",
-        "description": "A small gameplay prototype focused on tight controls and clean C# architecture."
+      "pocketflow": {
+        "title": "PocketFlow",
+        "description": "A budget tracking dashboard with balance trends, income vs. expense charts and a spending breakdown. Your data stays in your browser."
       },
       "api": {
         "title": "Task Manager API",
@@ -69,7 +69,10 @@
     "label": "02 — Experience",
     "heading": "Experience & education.",
     "subtitle": "Where I've worked and what I've studied.",
-    "types": { "work": "Work", "education": "Education" },
+    "types": {
+      "work": "Work",
+      "education": "Education"
+    },
     "items": {
       "mercanlar": {
         "period": "2024 — Present",
@@ -116,7 +119,10 @@
     "placeholder": "Type a command or search…",
     "empty": "No results found.",
     "footer": "↑↓ navigate · Enter select · Esc close",
-    "groups": { "navigate": "Navigate", "actions": "Actions" },
+    "groups": {
+      "navigate": "Navigate",
+      "actions": "Actions"
+    },
     "items": {
       "about": "Go to About",
       "experience": "Go to Experience",

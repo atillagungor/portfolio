@@ -47,9 +47,9 @@
         "title": "Portfolyo Sitesi",
         "description": "Şu an baktığın site: iki dilli, animasyonlu ve Next.js ile geliştirildi."
       },
-      "game": {
-        "title": "Unity Oyun Prototipi",
-        "description": "Akıcı kontroller ve temiz C# mimarisine odaklanan küçük bir oynanış prototipi."
+      "pocketflow": {
+        "title": "PocketFlow",
+        "description": "Bakiye trendi, gelir/gider grafikleri ve harcama dağılımı sunan bütçe takip paneli. Verilerin tarayıcında saklanır."
       },
       "api": {
         "title": "Görev Yöneticisi API",
@@ -69,7 +69,10 @@
     "label": "02 — Deneyim",
     "heading": "Deneyim ve eğitim.",
     "subtitle": "Nerelerde çalıştım, neler okudum.",
-    "types": { "work": "İş", "education": "Eğitim" },
+    "types": {
+      "work": "İş",
+      "education": "Eğitim"
+    },
     "items": {
       "mercanlar": {
         "period": "2024 — Günümüz",
@@ -116,7 +119,10 @@
     "placeholder": "Bir komut yaz ya da ara…",
     "empty": "Sonuç bulunamadı.",
     "footer": "↑↓ gezin · Enter seç · Esc kapat",
-    "groups": { "navigate": "Git", "actions": "İşlemler" },
+    "groups": {
+      "navigate": "Git",
+      "actions": "İşlemler"
+    },
     "items": {
       "about": "Hakkımda'ya git",
       "experience": "Deneyim'e git",
