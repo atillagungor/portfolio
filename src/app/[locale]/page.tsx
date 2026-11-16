@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import JsonLd from "@/components/JsonLd";
 import Experience from "@/components/Experience";
+import CommandPalette from "@/components/CommandPalette";
 import { useLocale } from "next-intl";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <JsonLd locale={locale} />
       <Intro />
       <Background />
+      <CommandPalette />
       <Navbar />
       <main>
         <Hero />

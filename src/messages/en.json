@@ -102,5 +102,25 @@
         ]
       }
     }
+  },
+  "Palette": {
+    "open": "Open command palette",
+    "title": "Command palette",
+    "placeholder": "Type a command or search…",
+    "empty": "No results found.",
+    "footer": "↑↓ navigate · Enter select · Esc close",
+    "groups": { "navigate": "Navigate", "actions": "Actions" },
+    "items": {
+      "about": "Go to About",
+      "experience": "Go to Experience",
+      "projects": "Go to Projects",
+      "contact": "Go to Contact",
+      "copyEmail": "Copy email address",
+      "copied": "Copied!",
+      "github": "Open GitHub",
+      "linkedin": "Open LinkedIn",
+      "cv": "Download CV",
+      "switchLang": "Switch to Turkish"
+    }
   }
 }
