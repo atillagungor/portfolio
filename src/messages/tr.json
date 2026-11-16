@@ -10,7 +10,8 @@
     "subtitle": "Temiz, hızlı ve özenle tasarlanmış web deneyimleri geliştiriyorum.",
     "cta": "Çalışmalarım",
     "contact": "İletişime geç",
-    "scroll": "Kaydır"
+    "scroll": "Kaydır",
+    "cv": "CV indir"
   },
   "About": {
     "label": "01 — Hakkımda",
@@ -24,13 +25,13 @@
     }
   },
   "Contact": {
-    "label": "03 — İletişim",
+    "label": "04 — İletişim",
     "line1": "Birlikte",
     "line2": "çalışalım.",
     "subtitle": "Bir fikrin, projen ya da sadece merhaban mı var? Kapım her zaman açık."
   },
   "Projects": {
-    "label": "02 — Projeler",
+    "label": "03 — Projeler",
     "heading": "Seçili işler.",
     "subtitle": "Geliştirdiğim birkaç şey. Yenileri yolda.",
     "view": "Projeyi gör",
@@ -56,5 +57,50 @@
   "Meta": {
     "title": "Atilla Güngör — Yazılım Geliştirici",
     "description": "C#, SQL, Unity, TypeScript ve DevOps ile çalışan yazılım geliştirici Atilla Güngör'ün portfolyosu."
+  },
+  "Experience": {
+  "label": "02 — Deneyim",
+  "heading": "Deneyim ve eğitim.",
+  "subtitle": "Nerelerde çalıştım, neler okudum.",
+  "types": { "work": "İş", "education": "Eğitim" },
+  "items": {
+    "mercanlar": {
+      "period": "2024 — Günümüz",
+      "role": "Yazılım Geliştirici",
+      "org": "Mercanlar Otomotiv",
+      "bullets": [
+        "Kurum içi ve dışı web uygulamaları geliştiriyorum.",
+        ".NET Core ile backend servisleri geliştirip bakımını yapıyorum.",
+        "React ve Next.js ile kullanıcı odaklı arayüzler geliştiriyorum.",
+        "Linux sunucularda TeamCity ile CI/CD hatlarını kurup yönetiyorum, deploy güvenilirliğini ve test otomasyonunu iyileştiriyorum."
+      ]
+    },
+    "etstur": {
+      "period": "2021 — 2022",
+      "role": "Kalite Geliştirme Uzman Yardımcısı",
+      "org": "ETSTur",
+      "bullets": [
+        "Müşteri geri bildirimlerine ve konaklama deneyimlerine dayalı konaklama sonrası raporlar hazırladım.",
+        "Kontrol listeleriyle otellerin kalite değerlendirmelerini yaptım."
+      ]
+    },
+    "anadolu": {
+      "period": "2020 — 2024",
+      "role": "Web Tasarımı ve Kodlama",
+      "org": "Anadolu Üniversitesi",
+      "bullets": [
+        "Web teknolojilerine, yazılım geliştirme temellerine ve modern frontend/backend pratiklerine odaklandım.",
+        "JavaScript tabanlı framework'lerle projeler geliştirdim."
+      ]
+    },
+    "kocaeli": {
+      "period": "2018 — 2020",
+      "role": "Turist Rehberliği",
+      "org": "Kocaeli Üniversitesi",
+      "bullets": [
+        "İletişim, müşteri deneyimi ve hizmet odaklı iş akışları üzerine eğitim aldım."
+      ]
+    }
   }
+}
 }

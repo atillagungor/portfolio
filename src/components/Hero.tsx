@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useIntroDelay } from "@/lib/intro";
 
@@ -22,14 +23,17 @@ export default function Hero() {
   });
 
   return (
-    <section className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6">
+    <section className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-6">
       <motion.p {...fade(0)} className="mb-6 font-mono text-sm text-accent">
         {t("eyebrow")}
       </motion.p>
 
       <h1 className="text-[clamp(3rem,10vw,9rem)] font-semibold leading-[0.95] tracking-tighter">
         {words.map((word, i) => (
-          <span key={i} className="mr-[0.25em] inline-block overflow-hidden pb-[0.12em] align-bottom">
+          <span
+            key={i}
+            className="mr-[0.25em] inline-block overflow-hidden pb-[0.12em] align-bottom"
+          >
             <motion.span
               className={`inline-block ${i === words.length - 1 ? gradient : ""}`}
               initial={{ y: "110%", rotate: 6 }}
@@ -46,7 +50,7 @@ export default function Hero() {
         {t("subtitle")}
       </motion.p>
 
-      <motion.div {...fade(0.75)} className="mt-10 flex gap-4">
+      <motion.div {...fade(0.75)} className="mt-10 flex flex-wrap gap-4">
         <a
           href="#projects"
           className="rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:scale-105"
@@ -58,6 +62,14 @@ export default function Hero() {
           className="rounded-full border border-border px-6 py-3 text-sm transition hover:border-accent hover:text-accent"
         >
           {t("contact")}
+        </a>
+        <a
+          href="/cv/Atilla-Gungor-CV.pdf"
+          download
+          className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm transition hover:border-accent hover:text-accent"
+        >
+          <Download className="h-4 w-4" />
+          {t("cv")}
         </a>
       </motion.div>
 
