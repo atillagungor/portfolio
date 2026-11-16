@@ -122,5 +122,16 @@
       "cv": "Download CV",
       "switchLang": "Switch to Turkish"
     }
+  },
+  "EasterEgg": {
+    "label": "Achievement unlocked",
+    "title": "Konami Code",
+    "description": "You found the secret. Respect."
+  },
+  "NotFound": {
+    "label": "Side quest failed",
+    "title": "Quest not found.",
+    "description": "The page you're looking for wandered off the map. Let's get you back to the main quest.",
+    "home": "Back to home"
   }
 }

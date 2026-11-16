@@ -8,6 +8,7 @@ import Projects from "@/components/Projects";
 import JsonLd from "@/components/JsonLd";
 import Experience from "@/components/Experience";
 import CommandPalette from "@/components/CommandPalette";
+import EasterEgg from "@/components/EasterEgg";
 import { useLocale } from "next-intl";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Intro />
       <Background />
       <CommandPalette />
+      <EasterEgg />
       <Navbar />
       <main>
         <Hero />

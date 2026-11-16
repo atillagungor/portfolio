@@ -122,5 +122,16 @@
       "cv": "CV'yi indir",
       "switchLang": "İngilizceye geç"
     }
+  },
+  "EasterEgg": {
+    "label": "Başarım kilidi açıldı",
+    "title": "Konami Kodu",
+    "description": "Sırrı buldun. Saygılar."
+  },
+  "NotFound": {
+    "label": "Yan görev başarısız",
+    "title": "Görev bulunamadı.",
+    "description": "Aradığın sayfa haritadan kaybolmuş. Seni ana göreve geri götürelim.",
+    "home": "Ana sayfaya dön"
   }
 }
