@@ -15,13 +15,13 @@
   },
   "About": {
     "label": "01 — Hakkımda",
-    "heading": "Fikirleri temiz, hızlı ve özenli ürünlere dönüştürüyorum.",
-    "body": "Detaylara önem veren bir yazılım geliştiriciyim: okunabilir kod, akıcı etkileşimler ve doğru hissettiren arayüzler. Yeni araçlar öğrenmeyi ve sıfırdan bir şeyler inşa etmeyi seviyorum.",
+    "heading": "Backend mantığından kullanıcı deneyimine, verimli ve ölçeklenebilir web çözümleri geliştiriyorum.",
+    "body": ".NET ve React ile full stack geliştirici olarak çalışıyorum. Sistemleri bir bütün olarak anlamayı, fikirleri işe yarayan dijital ürünlere dönüştürmeyi seviyorum. Yeni teknolojileri ve sektör trendlerini takip ederek kendimi sürekli geliştiriyorum.",
     "groups": {
-      "languages": "Diller",
-      "game": "Oyun Geliştirme",
-      "web": "Web",
-      "devops": "DevOps & Araçlar"
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "devops": "DevOps & Araçlar",
+      "practices": "Yaklaşım"
     }
   },
   "Contact": {
@@ -59,48 +59,48 @@
     "description": "C#, SQL, Unity, TypeScript ve DevOps ile çalışan yazılım geliştirici Atilla Güngör'ün portfolyosu."
   },
   "Experience": {
-  "label": "02 — Deneyim",
-  "heading": "Deneyim ve eğitim.",
-  "subtitle": "Nerelerde çalıştım, neler okudum.",
-  "types": { "work": "İş", "education": "Eğitim" },
-  "items": {
-    "mercanlar": {
-      "period": "2024 — Günümüz",
-      "role": "Yazılım Geliştirici",
-      "org": "Mercanlar Otomotiv",
-      "bullets": [
-        "Kurum içi ve dışı web uygulamaları geliştiriyorum.",
-        ".NET Core ile backend servisleri geliştirip bakımını yapıyorum.",
-        "React ve Next.js ile kullanıcı odaklı arayüzler geliştiriyorum.",
-        "Linux sunucularda TeamCity ile CI/CD hatlarını kurup yönetiyorum, deploy güvenilirliğini ve test otomasyonunu iyileştiriyorum."
-      ]
-    },
-    "etstur": {
-      "period": "2021 — 2022",
-      "role": "Kalite Geliştirme Uzman Yardımcısı",
-      "org": "ETSTur",
-      "bullets": [
-        "Müşteri geri bildirimlerine ve konaklama deneyimlerine dayalı konaklama sonrası raporlar hazırladım.",
-        "Kontrol listeleriyle otellerin kalite değerlendirmelerini yaptım."
-      ]
-    },
-    "anadolu": {
-      "period": "2020 — 2024",
-      "role": "Web Tasarımı ve Kodlama",
-      "org": "Anadolu Üniversitesi",
-      "bullets": [
-        "Web teknolojilerine, yazılım geliştirme temellerine ve modern frontend/backend pratiklerine odaklandım.",
-        "JavaScript tabanlı framework'lerle projeler geliştirdim."
-      ]
-    },
-    "kocaeli": {
-      "period": "2018 — 2020",
-      "role": "Turist Rehberliği",
-      "org": "Kocaeli Üniversitesi",
-      "bullets": [
-        "İletişim, müşteri deneyimi ve hizmet odaklı iş akışları üzerine eğitim aldım."
-      ]
+    "label": "02 — Deneyim",
+    "heading": "Deneyim ve eğitim.",
+    "subtitle": "Nerelerde çalıştım, neler okudum.",
+    "types": { "work": "İş", "education": "Eğitim" },
+    "items": {
+      "mercanlar": {
+        "period": "2024 — Günümüz",
+        "role": "Yazılım Geliştirici",
+        "org": "Mercanlar Otomotiv",
+        "bullets": [
+          "Kurum içi ve dışı web uygulamaları geliştiriyorum.",
+          ".NET Core ile backend servisleri geliştirip bakımını yapıyorum.",
+          "React ve Next.js ile kullanıcı odaklı arayüzler geliştiriyorum.",
+          "Linux sunucularda TeamCity ile CI/CD hatlarını kurup yönetiyorum, deploy güvenilirliğini ve test otomasyonunu iyileştiriyorum."
+        ]
+      },
+      "etstur": {
+        "period": "2021 — 2022",
+        "role": "Kalite Geliştirme Uzman Yardımcısı",
+        "org": "ETSTur",
+        "bullets": [
+          "Müşteri geri bildirimlerine ve konaklama deneyimlerine dayalı konaklama sonrası raporlar hazırladım.",
+          "Kontrol listeleriyle otellerin kalite değerlendirmelerini yaptım."
+        ]
+      },
+      "anadolu": {
+        "period": "2020 — 2024",
+        "role": "Web Tasarımı ve Kodlama",
+        "org": "Anadolu Üniversitesi",
+        "bullets": [
+          "Web teknolojilerine, yazılım geliştirme temellerine ve modern frontend/backend pratiklerine odaklandım.",
+          "JavaScript tabanlı framework'lerle projeler geliştirdim."
+        ]
+      },
+      "kocaeli": {
+        "period": "2018 — 2020",
+        "role": "Turist Rehberliği",
+        "org": "Kocaeli Üniversitesi",
+        "bullets": [
+          "İletişim, müşteri deneyimi ve hizmet odaklı iş akışları üzerine eğitim aldım."
+        ]
+      }
     }
   }
-}
 }

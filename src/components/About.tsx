@@ -2,10 +2,22 @@ import { useTranslations } from "next-intl";
 import Reveal from "./Reveal";
 
 const groups = [
-  { key: "languages", skills: ["C#", "SQL", "TypeScript", "JavaScript"] },
-  { key: "game", skills: ["Unity", "C# Scripting", "Game Design"] },
-  { key: "web", skills: ["React", "Next.js", "Tailwind CSS", "Node.js"] },
-  { key: "devops", skills: ["Git", "GitHub", "Docker", "CI/CD", "Vercel"] },
+  {
+    key: "backend",
+    skills: [".NET Core", "C#", "Entity Framework", "SQL", "Redis", "RabbitMQ"],
+  },
+  {
+    key: "frontend",
+    skills: ["React", "TypeScript", "Next.js", "JavaScript", "HTML / CSS", "Tailwind CSS"],
+  },
+  {
+    key: "devops",
+    skills: ["CI/CD", "TeamCity", "Linux", "Git", "GitHub"],
+  },
+  {
+    key: "practices",
+    skills: ["Agile / Scrum", "Clean Code", "Design Patterns"],
+  },
 ] as const;
 
 export default function About() {
@@ -31,7 +43,7 @@ export default function About() {
 
       <div className="mt-20 grid gap-4 sm:grid-cols-2">
         {groups.map((group, i) => (
-          <Reveal key={group.key} delay={i * 0.1}>
+          <Reveal key={group.key} delay={(i % 2) * 0.1} className="h-full">
             <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur transition-colors hover:border-accent/50">
               <h3 className="mb-4 font-mono text-xs uppercase tracking-widest text-accent">
                 {t(`groups.${group.key}`)}

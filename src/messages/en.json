@@ -15,13 +15,13 @@
   },
   "About": {
     "label": "01 — About",
-    "heading": "I turn ideas into clean, fast and thoughtful products.",
-    "body": "I'm a software developer who cares about the details: readable code, smooth interactions and interfaces that feel right. I enjoy learning new tools and building things from scratch.",
+    "heading": "I build efficient, scalable web solutions, from backend logic to user experience.",
+    "body": "I work with .NET and React as a full stack developer. I enjoy understanding systems as a whole and turning ideas into practical digital products, and I keep improving myself by following new technologies and industry trends.",
     "groups": {
-      "languages": "Languages",
-      "game": "Game Development",
-      "web": "Web",
-      "devops": "DevOps & Tools"
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "devops": "DevOps & Tools",
+      "practices": "Practices"
     }
   },
   "Contact": {
@@ -59,48 +59,48 @@
     "description": "Portfolio of Atilla Güngör, a software developer working with C#, SQL, Unity, TypeScript and DevOps."
   },
   "Experience": {
-  "label": "02 — Experience",
-  "heading": "Experience & education.",
-  "subtitle": "Where I've worked and what I've studied.",
-  "types": { "work": "Work", "education": "Education" },
-  "items": {
-    "mercanlar": {
-      "period": "2024 — Present",
-      "role": "Software Developer",
-      "org": "Mercanlar Otomotiv",
-      "bullets": [
-        "Developing internal and external web applications.",
-        "Building and maintaining backend services with .NET Core.",
-        "Creating user-focused interfaces with React and Next.js.",
-        "Configuring and maintaining TeamCity CI/CD builds on Linux servers, improving deployment reliability and test automation."
-      ]
-    },
-    "etstur": {
-      "period": "2021 — 2022",
-      "role": "Quality Improvement Specialist Assistant",
-      "org": "ETSTur",
-      "bullets": [
-        "Prepared post-stay reports based on customer feedback and accommodation experiences.",
-        "Conducted quality evaluations of hotels using checklists."
-      ]
-    },
-    "anadolu": {
-      "period": "2020 — 2024",
-      "role": "Web Design & Coding",
-      "org": "Anadolu University",
-      "bullets": [
-        "Focused on web technologies, software development fundamentals and modern frontend/backend practices.",
-        "Developed projects using JavaScript-based frameworks."
-      ]
-    },
-    "kocaeli": {
-      "period": "2018 — 2020",
-      "role": "Tourist Guide",
-      "org": "Kocaeli University",
-      "bullets": [
-        "Studied communication, customer experience and service-oriented workflows."
-      ]
+    "label": "02 — Experience",
+    "heading": "Experience & education.",
+    "subtitle": "Where I've worked and what I've studied.",
+    "types": { "work": "Work", "education": "Education" },
+    "items": {
+      "mercanlar": {
+        "period": "2024 — Present",
+        "role": "Software Developer",
+        "org": "Mercanlar Otomotiv",
+        "bullets": [
+          "Developing internal and external web applications.",
+          "Building and maintaining backend services with .NET Core.",
+          "Creating user-focused interfaces with React and Next.js.",
+          "Configuring and maintaining TeamCity CI/CD builds on Linux servers, improving deployment reliability and test automation."
+        ]
+      },
+      "etstur": {
+        "period": "2021 — 2022",
+        "role": "Quality Improvement Specialist Assistant",
+        "org": "ETSTur",
+        "bullets": [
+          "Prepared post-stay reports based on customer feedback and accommodation experiences.",
+          "Conducted quality evaluations of hotels using checklists."
+        ]
+      },
+      "anadolu": {
+        "period": "2020 — 2024",
+        "role": "Web Design & Coding",
+        "org": "Anadolu University",
+        "bullets": [
+          "Focused on web technologies, software development fundamentals and modern frontend/backend practices.",
+          "Developed projects using JavaScript-based frameworks."
+        ]
+      },
+      "kocaeli": {
+        "period": "2018 — 2020",
+        "role": "Tourist Guide",
+        "org": "Kocaeli University",
+        "bullets": [
+          "Studied communication, customer experience and service-oriented workflows."
+        ]
+      }
     }
   }
-}
 }
