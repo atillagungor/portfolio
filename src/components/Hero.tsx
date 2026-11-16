@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import { useTranslations } from "next-intl";
+import TypedRole from "./TypedRole";
 import { useIntroDelay } from "@/lib/intro";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -25,7 +26,7 @@ export default function Hero() {
   return (
     <section className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-6">
       <motion.p {...fade(0)} className="mb-6 font-mono text-sm text-accent">
-        {t("eyebrow")}
+        <TypedRole />
       </motion.p>
 
       <h1 className="text-[clamp(3rem,10vw,9rem)] font-semibold leading-[0.95] tracking-tighter">

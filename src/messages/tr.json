@@ -6,6 +6,13 @@
   },
   "Hero": {
     "eyebrow": "Yazılım Geliştirici",
+    "roles": [
+      "Yazılım Geliştirici",
+      "Backend Geliştirici",
+      "Full Stack Geliştirici",
+      ".NET Geliştirici",
+      "Frontend Geliştirici"
+    ],
     "title": "Merhaba, ben Atilla.",
     "subtitle": "Temiz, hızlı ve özenle tasarlanmış web deneyimleri geliştiriyorum.",
     "cta": "Çalışmalarım",
@@ -133,5 +140,10 @@
     "title": "Görev bulunamadı.",
     "description": "Aradığın sayfa haritadan kaybolmuş. Seni ana göreve geri götürelim.",
     "home": "Ana sayfaya dön"
+  },
+  "Footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "built": "Next.js ve Tailwind CSS ile geliştirildi",
+    "top": "Yukarı dön"
   }
 }

@@ -9,6 +9,7 @@ import JsonLd from "@/components/JsonLd";
 import Experience from "@/components/Experience";
 import CommandPalette from "@/components/CommandPalette";
 import EasterEgg from "@/components/EasterEgg";
+import Footer from "@/components/Footer";
 import { useLocale } from "next-intl";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

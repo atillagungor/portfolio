@@ -17,6 +17,7 @@ import type { LucideIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { author } from "@/lib/site";
+import { useLenis } from "lenis/react";
 
 const EMAIL = "atillaagungorr@gmail.com";
 const CV_PATH = "/cv/Atilla-Gungor-CV.pdf";
@@ -35,6 +36,7 @@ export default function CommandPalette() {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const lenis = useLenis();
 
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -66,10 +68,12 @@ export default function CommandPalette() {
 
   const goTo = (id: string) => {
     close();
-    setTimeout(
-      () => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }),
-      60
-    );
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (lenis) lenis.scrollTo(el);
+      else el.scrollIntoView({ behavior: "smooth" });
+    }, 60);
   };
 
   const openLink = (url: string) => {
@@ -102,20 +106,83 @@ export default function CommandPalette() {
   };
 
   const commands: Command[] = [
-    { id: "about", group: "navigate", label: t("items.about"), keywords: "about hakkımda ben me", icon: User, run: () => goTo("about") },
-    { id: "experience", group: "navigate", label: t("items.experience"), keywords: "experience deneyim work iş education eğitim timeline", icon: Briefcase, run: () => goTo("experience") },
-    { id: "projects", group: "navigate", label: t("items.projects"), keywords: "projects projeler portfolio work", icon: Folder, run: () => goTo("projects") },
-    { id: "contact", group: "navigate", label: t("items.contact"), keywords: "contact iletişim mail reach", icon: Mail, run: () => goTo("contact") },
-    { id: "email", group: "actions", label: copied ? t("items.copied") : t("items.copyEmail"), keywords: "email mail e-posta kopyala copy", icon: Copy, run: copyEmail },
-    { id: "github", group: "actions", label: t("items.github"), keywords: "github git code kod", icon: ExternalLink, run: () => openLink(author.github) },
-    { id: "linkedin", group: "actions", label: t("items.linkedin"), keywords: "linkedin profile profil", icon: ExternalLink, run: () => openLink(author.linkedin) },
-    { id: "cv", group: "actions", label: t("items.cv"), keywords: "cv resume özgeçmiş download indir pdf", icon: Download, run: downloadCv },
-    { id: "lang", group: "actions", label: t("items.switchLang"), keywords: "language dil türkçe english ingilizce turkish tr en", icon: Languages, run: switchLang },
+    {
+      id: "about",
+      group: "navigate",
+      label: t("items.about"),
+      keywords: "about hakkımda ben me",
+      icon: User,
+      run: () => goTo("about"),
+    },
+    {
+      id: "experience",
+      group: "navigate",
+      label: t("items.experience"),
+      keywords: "experience deneyim work iş education eğitim timeline",
+      icon: Briefcase,
+      run: () => goTo("experience"),
+    },
+    {
+      id: "projects",
+      group: "navigate",
+      label: t("items.projects"),
+      keywords: "projects projeler portfolio work",
+      icon: Folder,
+      run: () => goTo("projects"),
+    },
+    {
+      id: "contact",
+      group: "navigate",
+      label: t("items.contact"),
+      keywords: "contact iletişim mail reach",
+      icon: Mail,
+      run: () => goTo("contact"),
+    },
+    {
+      id: "email",
+      group: "actions",
+      label: copied ? t("items.copied") : t("items.copyEmail"),
+      keywords: "email mail e-posta kopyala copy",
+      icon: Copy,
+      run: copyEmail,
+    },
+    {
+      id: "github",
+      group: "actions",
+      label: t("items.github"),
+      keywords: "github git code kod",
+      icon: ExternalLink,
+      run: () => openLink(author.github),
+    },
+    {
+      id: "linkedin",
+      group: "actions",
+      label: t("items.linkedin"),
+      keywords: "linkedin profile profil",
+      icon: ExternalLink,
+      run: () => openLink(author.linkedin),
+    },
+    {
+      id: "cv",
+      group: "actions",
+      label: t("items.cv"),
+      keywords: "cv resume özgeçmiş download indir pdf",
+      icon: Download,
+      run: downloadCv,
+    },
+    {
+      id: "lang",
+      group: "actions",
+      label: t("items.switchLang"),
+      keywords: "language dil türkçe english ingilizce turkish tr en",
+      icon: Languages,
+      run: switchLang,
+    },
   ];
 
   const q = query.trim().toLowerCase();
   const filtered = commands.filter(
-    (c) => !q || `${c.label} ${c.keywords}`.toLowerCase().includes(q)
+    (c) => !q || `${c.label} ${c.keywords}`.toLowerCase().includes(q),
   );
   const current = Math.min(active, Math.max(filtered.length - 1, 0));
 
@@ -161,6 +228,7 @@ export default function CommandPalette() {
         {open && (
           <motion.div
             key="palette"
+            data-lenis-prevent
             className="fixed inset-0 z-[90] flex items-start justify-center bg-black/60 px-4 pt-[14vh] backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -199,12 +267,15 @@ export default function CommandPalette() {
 
               <div ref={listRef} className="max-h-80 overflow-y-auto p-2">
                 {filtered.length === 0 && (
-                  <p className="px-3 py-8 text-center text-sm text-white/50">{t("empty")}</p>
+                  <p className="px-3 py-8 text-center text-sm text-white/50">
+                    {t("empty")}
+                  </p>
                 )}
 
                 {filtered.map((c, i) => {
                   const Icon = c.icon;
-                  const showHeading = i === 0 || filtered[i - 1].group !== c.group;
+                  const showHeading =
+                    i === 0 || filtered[i - 1].group !== c.group;
                   return (
                     <div key={c.id}>
                       {showHeading && (
@@ -218,13 +289,17 @@ export default function CommandPalette() {
                         onMouseMove={() => setActive(i)}
                         onClick={c.run}
                         className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition-colors ${
-                          i === current ? "bg-white/10 text-white" : "text-white/70"
+                          i === current
+                            ? "bg-white/10 text-white"
+                            : "text-white/70"
                         }`}
                       >
                         <Icon className="h-4 w-4 shrink-0 text-accent" />
                         <span className="flex-1">{c.label}</span>
                         {i === current && (
-                          <span className="font-mono text-xs text-white/40">↵</span>
+                          <span className="font-mono text-xs text-white/40">
+                            ↵
+                          </span>
                         )}
                       </button>
                     </div>

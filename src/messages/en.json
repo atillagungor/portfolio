@@ -6,6 +6,13 @@
   },
   "Hero": {
     "eyebrow": "Software Developer",
+    "roles": [
+      "Software Developer",
+      "Backend Developer",
+      "Full Stack Developer",
+      ".NET Developer",
+      "Frontend Developer"
+    ],
     "title": "Hi, I'm Atilla.",
     "subtitle": "I build clean, fast and thoughtful web experiences.",
     "cta": "See my work",
@@ -133,5 +140,10 @@
     "title": "Quest not found.",
     "description": "The page you're looking for wandered off the map. Let's get you back to the main quest.",
     "home": "Back to home"
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with Next.js & Tailwind CSS",
+    "top": "Back to top"
   }
 }
