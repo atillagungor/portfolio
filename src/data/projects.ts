@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     key: "pocketflow",
     tags: ["Next.js", "TypeScript", "Recharts", "Tailwind CSS"],
-    href: "https://github.com/atillagungor/pocketflow",
+    href: "https://github.com/atillagungor/pocketflowdemo",
     image: "/projects/pocketflow.png",
     gradient: "linear-gradient(135deg, #22c55e, #22d3ee)",
   },
